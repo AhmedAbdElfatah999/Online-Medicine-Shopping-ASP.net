@@ -234,21 +234,24 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\productsController.cs" />
     <Compile Include="Controllers\usersController.cs" />
+    <Compile Include="Controllers\user_typeController.cs" />
     <Compile Include="Data\Online_Medicine_Shopping_DBContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202003052125437_InitialCreate.cs" />
-    <Compile Include="Migrations\202003052125437_InitialCreate.designer.cs">
-      <DependentUpon>202003052125437_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202003062002329_Migration.cs" />
-    <Compile Include="Migrations\202003062002329_Migration.designer.cs">
-      <DependentUpon>202003062002329_Migration.cs</DependentUpon>
+    <Compile Include="Migrations\202003101434236_new.cs" />
+    <Compile Include="Migrations\202003101434236_new.designer.cs">
+      <DependentUpon>202003101434236_new.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\order.cs" />
     <Compile Include="Models\product.cs" />
+    <Compile Include="Models\product_order.cs" />
+    <Compile Include="Models\product_supplier.cs" />
+    <Compile Include="Models\supplier.cs" />
     <Compile Include="Models\users.cs" />
+    <Compile Include="Models\user_order.cs" />
+    <Compile Include="Models\user_type.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -263,16 +266,21 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Views\products\Create.cshtml" />
-    <Content Include="Views\products\Delete.cshtml" />
-    <Content Include="Views\products\Details.cshtml" />
-    <Content Include="Views\products\Edit.cshtml" />
-    <Content Include="Views\products\Index.cshtml" />
     <Content Include="Views\users\Create.cshtml" />
     <Content Include="Views\users\Delete.cshtml" />
     <Content Include="Views\users\Details.cshtml" />
     <Content Include="Views\users\Edit.cshtml" />
     <Content Include="Views\users\Index.cshtml" />
+    <Content Include="Views\user_type\Create.cshtml" />
+    <Content Include="Views\user_type\Delete.cshtml" />
+    <Content Include="Views\user_type\Details.cshtml" />
+    <Content Include="Views\user_type\Edit.cshtml" />
+    <Content Include="Views\user_type\Index.cshtml" />
+    <Content Include="Views\products\Create.cshtml" />
+    <Content Include="Views\products\Delete.cshtml" />
+    <Content Include="Views\products\Details.cshtml" />
+    <Content Include="Views\products\Edit.cshtml" />
+    <Content Include="Views\products\Index.cshtml" />
     <None Include="_bin_deployableAssemblies\x86\sqlcese40.dll" />
     <None Include="_bin_deployableAssemblies\x86\sqlceqp40.dll" />
     <None Include="_bin_deployableAssemblies\x86\sqlceme40.dll" />
@@ -337,11 +345,8 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202003052125437_InitialCreate.resx">
-      <DependentUpon>202003052125437_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202003062002329_Migration.resx">
-      <DependentUpon>202003062002329_Migration.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202003101434236_new.resx">
+      <DependentUpon>202003101434236_new.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

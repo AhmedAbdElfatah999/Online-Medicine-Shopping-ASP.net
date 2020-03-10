@@ -5,6 +5,7 @@ using System.Web;
 using System.Drawing;
 using System.Data;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Online_Medicine_Shopping.Models
 {
@@ -20,11 +21,13 @@ namespace Online_Medicine_Shopping.Models
         [Display(Name = "Quantity")]
         public int quantity { get; set; }
         [Display(Name = "Category Name")]
-        public string category_name { get; set; }
+        public int category_id { get; set; }
         [Display(Name = "Description")]
         public string descrition { get; set; }
 
         [Display(Name = "Image")]
         public byte[] image { get; set; }
+        [ForeignKey(nameof(category_id))]
+        public virtual category category { get; set; }
     }
 }

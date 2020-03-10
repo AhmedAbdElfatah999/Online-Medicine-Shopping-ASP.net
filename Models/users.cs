@@ -37,6 +37,7 @@ namespace Online_Medicine_Shopping.Models
         [DataType(DataType.EmailAddress)]
 
         [Required(ErrorMessage = "Required Email filled")]
+        [Display(Name = "Email")]
         public string email { get; set; }
 
     }

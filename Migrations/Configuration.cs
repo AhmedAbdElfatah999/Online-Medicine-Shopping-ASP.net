@@ -10,7 +10,6 @@
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
-            ContextKey = "Online_Medicine_Shopping.Data.Online_Medicine_Shopping_DBContext";
         }
 
         protected override void Seed(Online_Medicine_Shopping.Data.Online_Medicine_Shopping_DBContext context)

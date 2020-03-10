@@ -168,6 +168,3 @@ C:\Users\Ahmed 3amer\source\repos\Online_Medicine_Shopping\Online_Medicine_Shopp
 C:\Users\Ahmed 3amer\source\repos\Online_Medicine_Shopping\Online_Medicine_Shopping\bin\EntityFramework.Testing.dll
 C:\Users\Ahmed 3amer\source\repos\Online_Medicine_Shopping\Online_Medicine_Shopping\bin\EntityFramework.Testing.xml
 C:\Users\Ahmed 3amer\source\repos\Online_Medicine_Shopping\Online_Medicine_Shopping\obj\Debug\Online_Medicine_Shopping.csprojAssemblyReference.cache
-C:\Users\Ahmed 3amer\source\repos\Online_Medicine_Shopping\Online_Medicine_Shopping\obj\Debug\Online_Medicine_Shopping.Migrations.InitialCreate.resources
-C:\Users\Ahmed 3amer\source\repos\Online_Medicine_Shopping\Online_Medicine_Shopping\obj\Debug\Online_Medicine_Shopping.csproj.GenerateResource.cache
-C:\Users\Ahmed 3amer\source\repos\Online_Medicine_Shopping\Online_Medicine_Shopping\obj\Debug\Online_Medicine_Shopping.Migrations.Migration.resources
